@@ -1,0 +1,21 @@
+{
+  "name": "vue-cli-locale-kr",
+  "description": "Korean localization for @vue/cli",
+  "version": "0.1.0",
+  "author": "Vue.js Korean User Group",
+  "bugs": {
+    "url": "https://github.com/vuejs-kr/vue-cli-locale-kr/issues"
+  },
+  "homepage": "https://github.com/vuejs-kr/vue-cli-locale-kr#readme",
+  "keywords": [
+    "locale",
+    "vue-cli",
+    "vuejs"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs-kr/vue-cli-locale-kr.git"
+  },
+  "unpkg": "./locales/kr.json"
+}

@@ -1,4 +1,4 @@
-# :flag-kr: vue-cli-locale-kr
+# 🇰🇷 vue-cli-locale-kr
 
 Korean localization for @vue/cli
 

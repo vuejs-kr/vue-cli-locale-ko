@@ -1,5 +1,9 @@
 {
   "components": {
+    "connection-status": {
+      "disconnected": "UI 서버와 연결이 끊겼습니다.",
+      "connected": "연결되었습니다!"
+    },
     "file-diff": {
       "binary": "바이너리 파일은 볼 수 없습니다.",
       "actions": {
@@ -96,7 +100,7 @@
     },
     "status-bar": {
       "project": {
-        "tooltip": "현재 프로젝트<br><i>클릭하여 프로젝트 관리자를 토글하세요</i>",
+        "tooltip": "현재 프로젝트<br><i>클릭하여 프로젝트 매니저를 토글하세요</i>",
         "empty": "프로젝트가 없습니다."
       },
       "path": {
@@ -106,7 +110,7 @@
         "tooltip": "로그<br><i>클릭하여 Vue CLI 로그를 토글하세요</i>",
         "empty": "로그가 없습니다."
       },
-      "report-bug": "버그 리포트하기"
+      "report-bug": "버그 리포트"
     },
     "terminal-view": {
       "buttons": {
@@ -128,8 +132,7 @@
     "progress": {
       "creating": "프로젝트 만드는중...",
       "git-init": "git 저장소 초기화 중...",
-      "plugins-install":
-        "Vue CLI 플러그인을 설치하고 있습니다. 잠시만 기다려주세요...",
+      "plugins-install": "Vue CLI 플러그인을 설치하고 있습니다. 잠시만 기다려주세요...",
       "invoking-generators": "생성자 호출 중...",
       "deps-install": "추가 의존성 설치 중...",
       "completion-hooks": "완료 훅 실행 중...",
@@ -154,7 +157,7 @@
   },
   "views": {
     "project-select": {
-      "title": "Vue 프로젝트 관리자",
+      "title": "Vue 프로젝트 매니저",
       "tabs": {
         "projects": "프로젝트",
         "create": "만들기",
@@ -201,8 +204,7 @@
         },
         "presets": {
           "title": "프리셋",
-          "description":
-            "사전 설정은 플러그인과 설정의 모음입니다. 기능을 선택한 후 선택적으로 프리셋으로 저장할 수 있으므로 모든 프로젝트를 다시 구성 할 필요없이 나중에 프로젝트에서 재사용 할 수 있습니다.",
+          "description": "사전 설정은 플러그인과 설정의 모음입니다. 기능을 선택한 후 선택적으로 프리셋으로 저장할 수 있으므로 모든 프로젝트를 다시 구성 할 필요없이 나중에 프로젝트에서 재사용 할 수 있습니다.",
           "select": "프리셋 선택",
           "buttons": {
             "previous": "이전",
@@ -216,8 +218,7 @@
         },
         "features": {
           "title": "기능",
-          "description":
-            "프로젝트를 만든 후에 플러그인을 설치하여 기능을 추가 할 수 있습니다.",
+          "description": "프로젝트를 만든 후에 플러그인을 설치하여 기능을 추가 할 수 있습니다.",
           "enable": "기능 켜기",
           "buttons": {
             "previous": "이전",
@@ -235,8 +236,7 @@
             "title": "새 프리셋으로 저장",
             "body": {
               "title": "프리셋 이름",
-              "subtitle":
-                "기능과 설정을 새 프리셋으로 저장합니다."
+              "subtitle": "기능과 설정을 새 프리셋으로 저장합니다."
             },
             "buttons": {
               "cancel": "취소",
@@ -313,10 +313,8 @@
     },
     "about": {
       "title": "Vue CLI에 대하여",
-      "description":
-        "<a href=\"https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-ui\" target=\"_blank\">@vue/cli-ui</a> is a built-in package of vue-cli which opens a full-blown UI.",
-      "quote":
-        "Vue-cli 3.x is a complete rewrite, with a lot of new awesome features. You will be to select features like routing, Vuex or Typescript, then add and upgrade building blocks called \"vue-cli plugins\". But having so much more options also means the tool is now more complex and harder to start using. That's why we thought having a full-blown GUI would help discover the new features, search and install vue-cli plugins and unlock more possibilities overall while not being limited by a terminal interface. To sum up, vue-cli will not only allow you to bootstrap a new project easily, but it will also remain useful for ongoing work afterwards!",
+      "description": "<a href=\"https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-ui\" target=\"_blank\">@vue/cli-ui</a> is a built-in package of vue-cli which opens a full-blown UI.",
+      "quote": "Vue-cli 3.x is a complete rewrite, with a lot of new awesome features. You will be to select features like routing, Vuex or Typescript, then add and upgrade building blocks called \"vue-cli plugins\". But having so much more options also means the tool is now more complex and harder to start using. That's why we thought having a full-blown GUI would help discover the new features, search and install vue-cli plugins and unlock more possibilities overall while not being limited by a terminal interface. To sum up, vue-cli will not only allow you to bootstrap a new project easily, but it will also remain useful for ongoing work afterwards!",
       "links": "유용한 링크",
       "back": "뒤로가기"
     }
@@ -350,8 +348,7 @@
       },
       "asset-list": {
         "title": "에셋",
-        "size-warning":
-          "This asset is big, consider using Code splitting to create smaller assets."
+        "size-warning": "This asset is big, consider using Code splitting to create smaller assets."
       }
     },
     "analyzer": {
@@ -365,8 +362,7 @@
       "parsed": "분석됨",
       "gzip": "Gzip"
     },
-    "help":
-      "<b>통계:</b> size from webpack stats data.<br>\n<b>분석:</b> size from extracted source (after minification plugins). More accurate.<br><b>Gzip:</b> size of gzipped extracted source.",
+    "help": "<b>통계:</b> size from webpack stats data.<br>\n<b>분석:</b> size from extracted source (after minification plugins). More accurate.<br><b>Gzip:</b> size of gzipped extracted source.",
     "tasks": {
       "serve": {
         "description": "개발용 컴파일 및 핫 리로드"

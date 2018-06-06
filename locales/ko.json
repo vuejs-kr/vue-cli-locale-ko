@@ -139,7 +139,7 @@
       "invoking-generators": "생성자 호출 중...",
       "deps-install": "추가 의존성 설치 중...",
       "completion-hooks": "완료 훅 실행 중...",
-      "fetch-remote-preset": "원격 프리셋 가져오는 중...",
+      "fetch-remote-preset": "리모트 프리셋 가져오는 중...",
       "done": "성공적으로 프로젝트를 만들었습니다.",
       "plugin-install": "{arg0} 설치 중...",
       "plugin-uninstall": "{arg0} 삭제 중...",

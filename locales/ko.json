@@ -309,7 +309,7 @@
     },
     "project-configuration-details": {
       "actions": {
-        "cancel": "변경사항 ",
+        "cancel": "되돌리기",
         "save": "변경사항 저장",
         "more-info": "더보기"
       }

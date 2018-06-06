@@ -1,4 +1,4 @@
-# 🇰🇷 vue-cli-locale-kr
+# 🇰🇷 vue-cli-locale-ko
 
 Korean localization for @vue/cli
 

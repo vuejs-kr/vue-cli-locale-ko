@@ -359,7 +359,7 @@
         }
       },
       "speed-stats": {
-        "title": "성능 상태"
+        "title": "성능 통계"
       },
       "module-list": {
         "title": "의존성"

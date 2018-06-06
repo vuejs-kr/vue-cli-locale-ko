@@ -405,9 +405,9 @@
         "watch": "변경 감지"
       },
       "inspect": {
-        "description": "webpack 설정을 검사",
+        "description": "webpack 설정 검사",
         "mode": "환경변수 (env)",
-        "verbose": "전체 함수의 정의 표시"
+        "verbose": "전체 함수 정의 표시"
       }
     }
   },

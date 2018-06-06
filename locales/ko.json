@@ -377,9 +377,9 @@
     },
     "sizes": {
       "stats": "통계",
-      "parsed": "분석됨",
+      "parsed": "변환됨",
       "gzip": "Gzip",
-      "help": "<b>통계:</b> size from webpack stats data.<br>\n<b>분석:</b> size from extracted source (after minification plugins). More accurate.<br><b>Gzip:</b> size of gzipped extracted source."
+      "help": "<b>통계:</b> webpack의 통계 데이터 크기<br>\n<b>변환됨:</b> 추출된 소스(최소화 후)의 크기. 더 정확합니다.<br><b>Gzip:</b> Gzip을 거친 추출된 소스의 크기."
     },
     "tasks": {
       "serve": {

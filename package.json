@@ -1,7 +1,7 @@
 {
   "name": "vue-cli-locale-ko",
   "description": "Korean localization for @vue/cli",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "author": "Vue.js Korean User Group",
   "scripts": {
     "publish": "git push origin master && npm publish"

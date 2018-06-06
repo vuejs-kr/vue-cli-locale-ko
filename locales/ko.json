@@ -215,21 +215,21 @@
             "create": "프로젝트 만들기"
           },
           "userConfigFiles": {
-            "name": "설정 파일 이용",
-            "description": "'package.json' 대신 '.babelrc' 같은 설정 파일을 이용합니다."
+            "name": "설정 파일 사용",
+            "description": "'package.json' 대신 '.babelrc' 같은 설정 파일을 사용합니다."
           },
           "modal": {
             "title": "리모트 프리셋 설정",
             "body": "곧 가능합니다...",
             "manual": {
-              "name": "Manual",
-              "description": "Manually select features"
+              "name": "직접설정",
+              "description": "사용할 기능을 직접 고릅니다."
             },
             "remote": {
-              "name": "Remote preset",
-              "description": "Fetch a preset from a git repository"
+              "name": "리모트 프리셋",
+              "description": "git 저장소에 있는 프리셋을 사용합니다."
             },
-            "default-preset": "Default preset"
+            "default-preset": "기본 프리셋"
           }
         },
         "features": {

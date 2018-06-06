@@ -379,7 +379,7 @@
       "stats": "통계",
       "parsed": "분석됨",
       "gzip": "Gzip",
-      "help": "<b>통계:</b> size from webpack stats data.<br>\n<b>분석:</b> size from extracted source (after minification plugins). More accurate.<br><b>Gzip:</b> size of gzipped extracted source.",
+      "help": "<b>통계:</b> size from webpack stats data.<br>\n<b>분석:</b> size from extracted source (after minification plugins). More accurate.<br><b>Gzip:</b> size of gzipped extracted source."
     },
     "tasks": {
       "serve": {

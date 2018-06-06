@@ -118,6 +118,9 @@
         "scroll": "맨 아래로 이동"
       }
     },
+    "top-bar": {
+      "no-favorites": "즐겨찾기한 프로젝트가 없습니다."
+    },
     "view-badge": {
       "labels": {
         "tasks": {
@@ -211,9 +214,22 @@
             "next": "다음",
             "create": "프로젝트 만들기"
           },
+          "userConfigFiles": {
+            "name": "설정 파일 이용",
+            "description": "'package.json' 대신 '.babelrc' 같은 설정 파일을 이용합니다."
+          },
           "modal": {
             "title": "리모트 프리셋 설정",
-            "body": "곧 가능합니다..."
+            "body": "곧 가능합니다...",
+            "manual": {
+              "name": "Manual",
+              "description": "Manually select features"
+            },
+            "remote": {
+              "name": "Remote preset",
+              "description": "Fetch a preset from a git repository"
+            },
+            "default-preset": "Default preset"
           }
         },
         "features": {
@@ -250,7 +266,8 @@
     "project-plugins": {
       "title": "프로젝트 플러그인",
       "button": "플러그인 추가",
-      "heading": "설치된 플러그인"
+      "heading": "설치된 플러그인",
+      "update-all": "전체 플러그인 업데이트"
     },
     "project-plugins-add": {
       "title": "플러그인 추가",
@@ -308,6 +325,7 @@
       },
       "command": "스크립트 커맨드",
       "parameters": "파라미터",
+      "parameters-info": "태스크가 시작되면 파라미터가 저장됩니다.",
       "more-info": "더보기",
       "output": "출력"
     },
@@ -348,7 +366,7 @@
       },
       "asset-list": {
         "title": "에셋",
-        "size-warning": "This asset is big, consider using Code splitting to create smaller assets."
+        "size-warning": "에셋이 너무 큽니다. 코드 스플릿을 통해 더 작은 크기로 만드세요."
       }
     },
     "analyzer": {
@@ -360,15 +378,36 @@
     "sizes": {
       "stats": "통계",
       "parsed": "분석됨",
-      "gzip": "Gzip"
+      "gzip": "Gzip",
+      "help": "<b>통계:</b> size from webpack stats data.<br>\n<b>분석:</b> size from extracted source (after minification plugins). More accurate.<br><b>Gzip:</b> size of gzipped extracted source.",
     },
-    "help": "<b>통계:</b> size from webpack stats data.<br>\n<b>분석:</b> size from extracted source (after minification plugins). More accurate.<br><b>Gzip:</b> size of gzipped extracted source.",
     "tasks": {
       "serve": {
-        "description": "개발용 컴파일 및 핫 리로드"
+        "description": "개발용 컴파일 및 핫 리로드",
+        "open": "서버가 시작되면 브라우저를 엽니다.",
+        "mode": "환경변수 (env)",
+        "host": "호스트",
+        "port": "포트",
+        "https": "HTTPS 사용"
       },
       "build": {
-        "description": "운영용 컴파일 및 최소화"
+        "description": "운영용 컴파일 및 최소화",
+        "mode": "환경변수 (env)",
+        "dest": "빌드 디렉터리",
+        "target": {
+          "description": "빌드 타겟",
+          "app": "웹앱",
+          "lib": "라이브러리",
+          "wc": "웹 컴포넌트",
+          "wc-async": "비동기 웹 컴포넌트"
+        },
+        "name": "라이브러리 또는 웹 컴포넌트 모드의 이름 (기본값: 'package.json'또는 엔트리 파일이름)",
+        "watch": "변경 감지"
+      },
+      "inspect": {
+        "description": "webpack 설정을 검사",
+        "mode": "환경변수 (env)",
+        "verbose": "전체 함수의 정의 표시"
       }
     }
   },
@@ -382,19 +421,48 @@
         "recommended": "추천함"
       },
       "eslint-extra": {
-        "description": "추가 ESLint 설정"
+        "description": "추가 ESLint 설정",
+        "lintOnSave": {
+          "message": "저장시 린트",
+          "description": "저장할 때 자동으로 린트합니다."
+        }
       }
     },
     "tasks": {
       "lint": {
-        "description": "린트 및 파일 수정"
+        "description": "린트 및 파일 수정",
+        "noFix": "에러를 수정하지 않습니다."
       }
     }
   },
   "pwa": {
     "config": {
       "pwa": {
-        "description": "프로그레시브 웹 앱(PWA)"
+        "description": "프로그레시브 웹 앱(PWA)",
+        "workboxPluginMode": {
+          "message": "플러그인 모드",
+          "description": "`workbox-webpack-plugin`의 두가지 모드를 선택할 수 있습니다."
+        },
+        "name": {
+          "message": "앱 이름",
+          "description": "스플래시 화면을 포함한 여러 곳에 출력되는 앱 이름입니다. 그리고 메타 태그 `apple-mobile-web-app-title`의 값으로도 사용합니다."
+        },
+        "themeColor": {
+          "message": "테마 색",
+          "description": "브라우저의 테마 색입니다."
+        },
+        "backgroundColor": {
+          "message": "스플래시 배경 색",
+          "description": "스플래시 화면의 배경 색입니다."
+        },
+        "msTileColor": {
+          "message": "윈도우 앱 타일 색",
+          "description": "윈도우의 앱 타일의 배경 색입니다."
+        },
+        "appleMobileWebAppStatusBarStyle": {
+          "message": "애플 상태표시줄 스타일",
+          "description": "iOS의 상태표시줄의 스타일입니다."
+        }
       }
     }
   }

@@ -319,8 +319,8 @@
     },
     "project-task-details": {
       "actions": {
-        "play": "태스크 실행",
-        "stop": "태스크 중지",
+        "play": "실행",
+        "stop": "중지",
         "close": "닫기"
       },
       "command": "스크립트 커맨드",

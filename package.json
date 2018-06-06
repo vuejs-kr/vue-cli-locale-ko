@@ -1,7 +1,7 @@
 {
   "name": "vue-cli-locale-ko",
   "description": "Korean localization for @vue/cli",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": "Vue.js Korean User Group",
   "bugs": {
     "url": "https://github.com/vuejs-kr/vue-cli-locale-ko/issues"

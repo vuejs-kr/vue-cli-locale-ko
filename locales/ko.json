@@ -416,9 +416,9 @@
       "eslint": {
         "description": "에러 체크 & 코드 품질",
         "groups": {
-          "strongly-recommended": "매우 추천함"
-        },
-        "recommended": "추천함"
+          "strongly-recommended": "매우 추천함",
+          "recommended": "추천함"
+        }
       },
       "eslint-extra": {
         "description": "추가 ESLint 설정",
